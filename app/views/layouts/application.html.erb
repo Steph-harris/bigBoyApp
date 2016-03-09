@@ -2,13 +2,27 @@
 <html>
 <head>
   <title>Einapets</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.0/foundation.min.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.0/foundation.min.js">
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <nav>
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Products</li>
+      <li>Contact</li>
+    </ul>
+    <p>The date and time is <%= Time.now %></p>
+  </nav>
 
-<%= yield %>
+  <%= yield %>
 
+  <footer>
+    &copy 2016 Big Bro's Closet
+  </footer>
 </body>
 </html>
