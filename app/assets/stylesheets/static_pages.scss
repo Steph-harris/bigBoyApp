@@ -4,6 +4,11 @@
 $background-color: #292c2f;
 $primary-color: #87D37C;
 
+body {
+  background:#000;
+  color: #777;
+  font-family: "Arial Black", Gadget, sans-serif;
+}
 .row {
   max-width: 100%;
 }
@@ -94,8 +99,7 @@ $primary-color: #87D37C;
   }
 }
 
-h1 {
-  font-family: Verdana, sans-serif;
+h1, h3 {
   color: #777;
   text-align: center;
 }
