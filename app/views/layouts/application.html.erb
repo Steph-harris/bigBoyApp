@@ -20,8 +20,8 @@
       <li><a href="#">Clothes</a></li>
     </ul>
     <ul class="inline-list hide-for-small-only account-action">
-      <li><a href="#" data-reveal-id="myModal">Login</a></li>
-      <li class=""><a class="signup" href="#" data-reveal-id="myModal">Signup</a></li>
+      <li><a href="#" data-open="myModal" data-reveal-id="myModal">Login</a></li>
+      <li class=""><a data-open="myModal" href="#" data-reveal-id="myModal">Signup</a></li>
     </ul>
     <a class="account hide-for-medium-up" href="#" data-reveal-id="myModal"><i class="fi-unlock"></i></a>
   </nav>
@@ -51,6 +51,7 @@
               </div>
             </div>
           </form>
+
           <a href="#" class="button ">Log In </a>
         </div>
       </div>
@@ -64,17 +65,17 @@
       </div>
 
      </div>
-    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    <a data-close class="close-reveal-modal" aria-label="Close">&#215;</a>
   </div>
 
     <%= yield %>
-    <a data-reveal-id="myModal2">Click Me For A Modal</a>
+    <a data-open="myModal2" data-reveal-id="myModal2">Click Me For A Modal</a>
 
     <div id="myModal2" class="reveal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
       <h2 id="modalTitle">Awesome. I have it.</h2>
       <p class="lead">Your couch.  It is mine.</p>
       <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
-      <a class="close-reveal" aria-label="Close">&#215;</a>
+      <a data-close class="close-reveal" aria-label="Close">&#215;</a>
     </div>
 
     <footer class="float-right">
